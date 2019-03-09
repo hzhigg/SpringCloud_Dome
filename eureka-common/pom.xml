@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.demo</groupId>
+		<artifactId>demo-parent</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent> 
+	<groupId>com.demo</groupId>
+	<artifactId>eureka-common</artifactId>
+	<packaging>jar</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>eureka-common</name>
+	<description>Demo project for Spring Boot</description>
+
+	<properties>
+		<java.version>1.8</java.version>
+		<spring-cloud-services.version>2.1.0.RELEASE</spring-cloud-services.version>
+		<spring-cloud.version>Greenwich.BUILD-SNAPSHOT</spring-cloud.version>
+	</properties>
+
+	<dependencies>
+	<!-- consul注册中心 -->
+	 <!-- <dependency>
+	  	<groupId>org.springframework.cloud</groupId>
+	  	<artifactId>spring-cloud-starter-consul-discovery</artifactId>
+		<version>2.0.2.RELEASE</version>
+	 </dependency> -->
+	 <!-- eureka注册中心 -->
+	<!-- 
+	 <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-eureka</artifactId>
+        <version>1.4.6.RELEASE</version>
+    </dependency> 
+ -->
+	<dependency>
+          <groupId>org.springframework.cloud</groupId>
+          <artifactId>spring-cloud-starter-eureka</artifactId>
+      </dependency>
+
+	<dependency>
+		<groupId>org.projectlombok</groupId>
+		<artifactId>lombok</artifactId>
+		<optional>true</optional>
+	</dependency>	
+		
+		<!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui -->
+		<dependency>
+		    <groupId>io.springfox</groupId>
+		    <artifactId>springfox-swagger-ui</artifactId>
+		    <version>2.9.2</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 -->
+		<dependency>
+		    <groupId>io.springfox</groupId>
+		    <artifactId>springfox-swagger2</artifactId>
+		    <version>2.9.2</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-lang3</artifactId>
+		    <version>3.0.1</version>
+		</dependency>
+	<!-- mybits generator 逆向生成sql插件 -->
+	<dependency>
+        <groupId>org.mybatis.generator</groupId>
+        <artifactId>mybatis-generator-core</artifactId>
+        <version>1.3.6</version>
+        <scope>system</scope>
+        <systemPath>${project.basedir}/lib/mybatis.jar</systemPath>
+    </dependency>
+    <dependency>
+        <groupId>org.mybatis.generator</groupId>
+        <artifactId>mybatis-generator-maven-plugin</artifactId>
+        <version>1.3.5</version>
+    </dependency>
+	<dependency>
+		<groupId>org.mybatis.generator</groupId>
+		<artifactId>mybatis-generator-core</artifactId>
+		<version>1.3.2</version>
+	</dependency>
+
+	<dependency>
+		<groupId>org.apache.shiro</groupId>
+		<artifactId>shiro-core</artifactId>
+		<version>1.4.0</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp -->
+	<dependency>
+		<groupId>com.squareup.okhttp3</groupId>
+		<artifactId>okhttp</artifactId>
+		<version>3.7.0</version>
+	</dependency>
+	<dependency>
+	    <groupId>org.springframework.boot</groupId>
+	    <artifactId>spring-boot-starter-mail</artifactId>
+	</dependency>
+	<!-- 分页插件 -->
+	 <dependency>
+          <groupId>com.github.pagehelper</groupId>
+          <artifactId>pagehelper-spring-boot-starter</artifactId>
+          <version>1.2.5</version>
+       </dependency>
+	      <!-- dozer -->
+       <dependency>
+           <groupId>net.sf.dozer</groupId>
+           <artifactId>dozer</artifactId>
+           <version>5.5.1</version>
+       </dependency>	
+       
+       <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+		<dependency>
+		    <groupId>com.alibaba</groupId>
+		    <artifactId>fastjson</artifactId>
+		    <version>1.2.54</version>
+		</dependency>
+		
+	</dependencies>
+
+	
+</project>

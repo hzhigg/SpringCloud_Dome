@@ -1,0 +1,8 @@
+.classpath
+.settings/
+.project
+eureka-consumer/.mvn/
+eureka-server/.mvn/
+eureka-client/.mvn/
+bin/
+eureka-common/.mvn/
