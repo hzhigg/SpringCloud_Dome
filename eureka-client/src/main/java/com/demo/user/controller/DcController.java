@@ -6,11 +6,18 @@ import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import io.swagger.annotations.ApiOperation;
+
 @RestController
 public class DcController {
 
 	@Value("${server.port}")
 	private String port;
+	@Value("${name}")
+    private  String name;
+    @Value("${age}")
+    private  String age;
+	
     @Autowired
     DiscoveryClient discoveryClient;
 
@@ -21,4 +28,10 @@ public class DcController {
         return services;
     }
 
+    @ApiOperation("测试配置中心")
+    @GetMapping("/testConfig")
+    public String testConfig(){
+    	 return "你好，我是"+name+",年龄："+age+"岁。";
+
+    }
 }

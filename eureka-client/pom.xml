@@ -21,11 +21,23 @@
 	</properties>
 
 	<dependencies>
+	<!-- 为什么需要引入前面的actuctor依赖，因为 我们Client端需要在不重启的情况下，
+	及时更新拉取加载配置中心的改变，然后修改内存中的配置的值。  -->
+	<dependency>
+         <groupId>org.springframework.boot</groupId>
+         <artifactId>spring-boot-starter-actuator</artifactId>
+     </dependency>
 
 	<dependency>
           <groupId>org.springframework.cloud</groupId>
           <artifactId>spring-cloud-starter-eureka</artifactId>
-      </dependency>
+          <exclusions>
+          	<exclusion>
+          		<groupId>com.google.guava</groupId>
+          		<artifactId>guava</artifactId>
+          	</exclusion>
+          </exclusions>
+	</dependency>
 
 	<dependency>
 		<groupId>mysql</groupId>
@@ -57,6 +69,21 @@
 		    <artifactId>eureka-common</artifactId>
 		    <version>0.0.1-SNAPSHOT</version>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>
+				spring-cloud-starter-netflix-eureka-server
+			</artifactId>
+			<version>1.4.2.RELEASE</version>
+			<exclusions>
+				<exclusion>
+					<groupId>com.google.guava</groupId>
+					<artifactId>guava</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		
 		
 	</dependencies>
 

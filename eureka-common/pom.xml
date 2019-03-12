@@ -38,7 +38,13 @@
 	<dependency>
           <groupId>org.springframework.cloud</groupId>
           <artifactId>spring-cloud-starter-eureka</artifactId>
-     </dependency>
+          <exclusions>
+          	<exclusion>
+          		<groupId>com.google.guava</groupId>
+          		<artifactId>guava</artifactId>
+          	</exclusion>
+          </exclusions>
+	</dependency>
      <!-- 配置中心 -->
      <dependency>
 	   <groupId>org.springframework.cloud</groupId>
@@ -52,16 +58,28 @@
 	</dependency>	
 		
 		<!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui -->
-		<dependency>
+		 <dependency>
 		    <groupId>io.springfox</groupId>
 		    <artifactId>springfox-swagger-ui</artifactId>
 		    <version>2.9.2</version>
-		</dependency>
+		    <exclusions>
+		    	<exclusion>
+		    		<groupId>com.google.guava</groupId>
+		    		<artifactId>guava</artifactId>
+		    	</exclusion>
+		    </exclusions>
+		 </dependency>
 		<!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 -->
 		<dependency>
 		    <groupId>io.springfox</groupId>
 		    <artifactId>springfox-swagger2</artifactId>
 		    <version>2.9.2</version>
+		    <exclusions>
+		    	<exclusion>
+		    		<groupId>com.google.guava</groupId>
+		    		<artifactId>guava</artifactId>
+		    	</exclusion>
+		    </exclusions>
 		</dependency>
 		
 		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
@@ -122,6 +140,20 @@
 		    <groupId>com.alibaba</groupId>
 		    <artifactId>fastjson</artifactId>
 		    <version>1.2.54</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>
+				spring-cloud-starter-netflix-eureka-server
+			</artifactId>
+			<version>1.4.2.RELEASE</version>
+			<exclusions>
+				<exclusion>
+					<groupId>com.google.guava</groupId>
+					<artifactId>guava</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		
 	</dependencies>
