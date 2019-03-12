@@ -1,7 +1,14 @@
-eureka-common Í¨ÓÃÀà
-eureka-client ·şÎñÌá¹©Õß
-eureka-consumer Ïû·ÑÕß
-eureka-server  ×¢²áÖĞĞÄ
 
-  ±¾demoÊ¹ÓÃeureka×÷Îª×¢²áÖĞĞÄ,¼¯³ÉÁËmybits.ÊµÏÖÁËÀ¹½ØÆ÷/ÓÊ¼ş·¢ËÍ/user·şÎñµ÷ÓÃµÈ
-¸÷ÖÖ³£ÓÃµÄ¹¤¾ßÀàÔÚeureka-common»ù±¾¶¼ÒÑ¾­¼¯³É½øÈ¥ÁË,Ï£Íû¶Ô¹Ø×¢µÄÈËÓĞËù°ïÖú¡£
+eureka-common é€šç”¨ç±»<br/>
+eureka-client æœåŠ¡æä¾›è€… <br/>
+eureka-consumer æ¶ˆè´¹è€… <br/>
+eureka-server  æ³¨å†Œä¸­å¿ƒ <br/>
+config-client  é…ç½®ä¸­å¿ƒ <br/>
+
+<h2>2019.3.8</h2>
+æœ¬demoä½¿ç”¨eurekaä½œä¸ºæ³¨å†Œä¸­å¿ƒ,é›†æˆäº†mybits.å®ç°äº†æ‹¦æˆªå™¨é›†æˆäº†mybits, å®ç°äº†æ‹¦æˆªå™¨/é‚®ä»¶å‘é€/useræœåŠ¡è°ƒç”¨ç­‰ ,å„ç§å¸¸ç”¨çš„å·¥å…·ç±»åœ¨eureka-commonåŸºæœ¬éƒ½å·²ç»é›†æˆè¿›å»äº†,å¸Œæœ›å¯¹å…³æ³¨çš„äººæœ‰æ‰€å¸®åŠ©ã€‚
+
+<h2>2019.3.12</h2>
+  1.æ–°å¢é…ç½®ä¸­å¿ƒ (New Configuration Center)<br/>
+  2.è°ƒæ•´é¡¹ç›®ä¾èµ–jaråŠä»£ç è°ƒæ•´ (Tuning project dependencies on jar and code tuning)<br/>
+  3.è§£å†³swagger-uiä¸€ç›´å¼¹çª—é—®é¢˜ (Solving the problem of swagger-ui always bouncing windows)<br/>
