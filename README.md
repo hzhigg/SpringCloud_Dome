@@ -15,3 +15,5 @@ config-client  配置中心 <br/>
 <h2>2019.3.13</h2>
   1.解决配置中心刷新不生效BUG (Resolve the problem of ineffective BUG refresh in configuration center)<br/>
   2.新增配置中心重启机制 (New configuration center restart mechanism)<br/>
+<h2>2019.3.14</h2>
+ 1.配置中心增加加密配置 (Configuration Center Increases Encryption Configuration)<br/>
