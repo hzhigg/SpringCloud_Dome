@@ -17,3 +17,5 @@ config-client  配置中心 <br/>
   2.新增配置中心重启机制 (New configuration center restart mechanism)<br/>
 <h2>2019.3.14</h2>
  1.配置中心增加加密配置 (Configuration Center Increases Encryption Configuration)<br/>
+<h2>2019.3.29</h2>
+ 1.增加防止XSS脚本攻击 (Added protection against XSS script attacks)<br/>
