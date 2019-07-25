@@ -19,8 +19,6 @@ public class DcController {
     private  String name;
     @Value("${age}")
     private  String age;
-    @Value("${testCipher}")
-    private  String testCipher;
     
 	
     @Autowired
@@ -36,7 +34,7 @@ public class DcController {
     @ApiOperation("测试配置中心")
     @GetMapping("/testConfig")
     public String testConfig(){
-    	 return "你好，我是"+name+",年龄："+age+"岁。testCipher:"+testCipher;
+    	 return "你好，我是"+name+",年龄："+age+"岁。";
 
     }
 }
